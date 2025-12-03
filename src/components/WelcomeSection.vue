@@ -3,7 +3,7 @@
       <!-- Versión móvil (columna) -->
       <div class="mobile-layout">
         <div class="image-container">
-          <img src="imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
+          <img :src="portadaImage" alt="Imagen de Lorenzo" class="profile-image" />
         </div>
         
         <div class="content-container">
@@ -38,7 +38,7 @@
         </div>
         
         <div class="image-wrapper">
-          <img src="imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
+          <img :src=portadaImage alt="Imagen de Lorenzo" class="profile-image" />
         </div>
       </div>
     </section>
@@ -46,6 +46,8 @@
   
   <script setup>
   // No se requiere lógica adicional por ahora.
+
+  const portadaImage = new URL('/imgs/Portada.png', import.meta.url).href;
   </script>
   
   <style scoped>

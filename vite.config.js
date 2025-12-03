@@ -5,19 +5,27 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   base: '/portfolio/',
+  
+  // Añade esta configuración para assets públicos
+  publicDir: 'public',
+  
   build: {
-    // Añade esta configuración para assets
-    assetsDir: 'assets',
+    // Configuración para manejar assets
+    assetsInlineLimit: 4096, // Archivos menores a 4kb se inlinenan
     rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          let extType = assetInfo.name.split('.')[1];
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = 'imgs';
-          }
-          return `${extType}/[name]-[hash][extname]`;
-        },
-      }
+      // Evita procesar archivos en public/ como módulos
+      external: [
+        /^\/imgs\//,
+        /^\/videos\//
+      ]
+    }
+  },
+  
+  // Resolución de alias para desarrollo
+  resolve: {
+    alias: {
+      '@': '/src'
     }
   }
 })
+
