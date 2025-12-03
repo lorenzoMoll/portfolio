@@ -5,10 +5,18 @@ import ImageViewer from './components/ImageViewer.vue';
 import Footer from './components/Footer.vue';
 import { ref } from 'vue';
 
+// Configuración para GitHub Pages
+const isProduction = import.meta.env.PROD;
+const basePath = isProduction ? '/portfolio/' : '/';
+
 const getPublicUrl = (path) => {
-  // En desarrollo: desde public/
-  // En producción: desde la raíz con base /portfolio/
-  return path.startsWith('/') ? path : `/${path}`;
+  // Si la ruta ya tiene basePath, no lo añadas de nuevo
+  if (path.startsWith(basePath)) {
+    return path;
+  }
+  // Añade basePath a rutas relativas
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${basePath}${cleanPath}`;
 };
 
 const projects = [
@@ -61,6 +69,7 @@ function openImageViewer(media) {
 function closeImageViewer() {
   imageViewerVisible.value = false;
 }
+
 </script>
 
 <template>
