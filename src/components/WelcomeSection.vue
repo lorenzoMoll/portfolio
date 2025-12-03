@@ -38,7 +38,7 @@
         </div>
         
         <div class="image-wrapper">
-          <img src="./../imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
+          <img src="/imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
         </div>
       </div>
     </section>
