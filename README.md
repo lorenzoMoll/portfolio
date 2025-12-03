@@ -84,14 +84,17 @@ Plataforma que centraliza tiendas locales permitiendo compras en l√≠nea y gesti√
 ```bash
 git clone https://github.com/tuusuario/portfolio.git
 cd portfolio
+```
 
 2. **Instalar dependencias**
 ```bash
 npm install
+```
 
 3. **Ejecutar en desarrollo**
 ```bash
 npm run dev
+```
 
 4. **Abrir en navegador**
 http://localhost:5173

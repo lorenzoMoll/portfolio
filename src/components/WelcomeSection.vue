@@ -3,7 +3,7 @@
       <!-- Versión móvil (columna) -->
       <div class="mobile-layout">
         <div class="image-container">
-          <img src="/imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
+          <img src="imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
         </div>
         
         <div class="content-container">
@@ -38,7 +38,7 @@
         </div>
         
         <div class="image-wrapper">
-          <img src="/imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
+          <img src="imgs/Portada.png" alt="Imagen de Lorenzo" class="profile-image" />
         </div>
       </div>
     </section>
