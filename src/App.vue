@@ -9,26 +9,26 @@ const projects = [
   {
     name: 'Syncblend',
     description: 'SyncBlend es una plataforma web diseñada específicamente para institutos, con un enfoque innovador en la gestión de estudiantes de entre 14 y 18 años. Su objetivo principal es recoger datos que permitan generar perfiles psicológicos personalizados y utilizar esta información para formar grupos de clase diversos, promoviendo la inclusión y minimizando posibles conflictos interpersonales. De este modo, SyncBlend busca optimizar la dinámica de los grupos y mejorar la experiencia educativa.',
-    image: '/portfolio/src/imgs/Syncblend_Home.png',
+    image: './src/imgs/Syncblend_Home.png',
     github: 'https://github.com/tuusuario/syncblend',
     media: [
-      { type: 'image', src: '/portfolio/src/imgs/Syncblend_Home.png' },
-      { type: 'image', src: '/portfolio/src/imgs/Syncblend_Login.png' },
-      { type: 'image', src: '/portfolio/src/imgs/Syncblend_Profile.png' }
+      { type: 'image', src: './src/imgs/Syncblend_Home.png' },
+      { type: 'image', src: './src/imgs/Syncblend_Login.png' },
+      { type: 'image', src: './src/imgs/Syncblend_Profile.png' }
     ]
   },
   {
     name: 'TR3Cine',
     description: 'TR3Cine es una aplicación web que permite a los usuarios consultar la cartelera, reservar películas y seleccionar sus asientos de manera rápida y sencilla. Incluye un panel de administración completo para que el cine gestione películas, fechas y horarios de forma ágil. Desarrollé el proyecto íntegramente por mi cuenta, utilizando Nuxt para el front-end y Laravel para el back-end, enfocándome en crear una experiencia intuitiva y eficiente tanto para los usuarios como para los administradores.',
-    image: '/portfolio/src/imgs/TR3Cine_Home.png',
+    image: './src/imgs/TR3Cine_Home.png',
     github: 'https://github.com/tuusuario/tr3cine',
     media: [
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_Home.png' },
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_Login.png' },
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_CatalogoPeliculas.png' },
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_ElegirAsiento.png' },
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_CRUD.png' },
-      { type: 'image', src: '/portfolio/src/imgs/TR3Cine_Stats.png' }
+      { type: 'image', src: './src/imgs/TR3Cine_Home.png' },
+      { type: 'image', src: './src/imgs/TR3Cine_Login.png' },
+      { type: 'image', src: './src/imgs/TR3Cine_CatalogoPeliculas.png' },
+      { type: 'image', src: './src/imgs/TR3Cine_ElegirAsiento.png' },
+      { type: 'image', src: './src/imgs/TR3Cine_CRUD.png' },
+      { type: 'image', src: './src/imgs/TR3Cine_Stats.png' }
     ]
   },
   {
@@ -37,9 +37,9 @@ const projects = [
     image: '/portfolio/src/imgs/HolaBarri_Mapa.png',
     github: 'https://github.com/tuusuario/holabarri',
     media: [
-      { type: 'image', src: '/portfolio/src/imgs/HolaBarri_Mapa.png' },
-      { type: 'image', src: '/portfolio/src/imgs/HolaBarri_Login.png' },
-      { type: 'video', src: '/portfolio/src/videos/HolaBarri_demo.mp4' }
+      { type: 'image', src: './src/imgs/HolaBarri_Mapa.png' },
+      { type: 'image', src: './src/imgs/HolaBarri_Login.png' },
+      { type: 'video', src: './src/videos/HolaBarri_demo.mp4' }
     ]
   },
 ];
